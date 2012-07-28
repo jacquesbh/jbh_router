@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * This file is part of Jbh_Router for Magento.
+ *
+ * @license MIT (https://raw.github.com/jacquesbh/jbh_router/master/LICENSE)
+ * @category Jbh
+ * @package Jbh_Router
+ * @copyright Copyright (c) 2012 Jacques Bodin-Hullin <jacques@bodin-hullin.net>
+ */
+-->
+<config>
+    <modules>
+        <Jbh_Router>
+            <version>0.1.0</version>
+        </Jbh_Router>
+    </modules>
+    <global>
+        <helpers>
+            <jbh_router>
+                <class>Jbh_Router_Helper</class>
+            </jbh_router>
+        </helpers>
+        <models>
+            <jbh_router>
+                <class>Jbh_Router_Model</class>
+            </jbh_router>
+        </models>
+        <events>
+            <controller_front_init_routers>
+                <observers>
+                     <jbh_router>
+                          <type>singleton</type>
+                          <class>Jbh_Router_Controller_Router</class>
+                          <method>initControllerRouters</method>
+                     </jbh_router>
+                </observers>
+           </controller_front_init_routers>
+        </events>
+    </global>
+</config>

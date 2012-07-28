@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * This file is part of Jbh_Router for Magento.
+ *
+ * @license MIT (https://raw.github.com/jacquesbh/jbh_router/master/LICENSE)
+ * @category Jbh
+ * @package Jbh_Router
+ * @copyright Copyright (c) 2012 Jacques Bodin-Hullin <jacques@bodin-hullin.net>
+ */
+-->
+<config>
+    <modules>
+        <Jbh_Router>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Jbh_Router>
+    </modules>
+</config>
