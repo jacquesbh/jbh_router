@@ -4,8 +4,8 @@
 
 ### Static url
 
-*   URL: http://example.org/foo.hmtl
-*   Match: http://example.org/foo/index/index
+*   URL: `http://example.org/foo.hmtl`
+*   Match: `http://example.org/foo/index/index`
 *   `config.xml`:
     ```xml
     <jbh_router>
@@ -30,13 +30,13 @@
 ### Regex URL
 
 *   URL:
-    *   http://example.org/helloworld/foo.html
-    *   http://example.org/helloworld/bar.html
-    *   http://example.org/helloworld/baz.html
+    *   `http://example.org/helloworld/foo.html`
+    *   `http://example.org/helloworld/bar.html`
+    *   `http://example.org/helloworld/baz.html`
 *   Match:
-    *   http://example.org/hello/index/index/key/foo
-    *   http://example.org/hello/index/index/key/bar
-    *   http://example.org/hello/index/index/key/baz
+    *   `http://example.org/hello/index/index/key/foo`
+    *   `http://example.org/hello/index/index/key/bar`
+    *   `http://example.org/hello/index/index/key/baz`
 *   `config.xml`:
     ```xml
     <jbh_router>
