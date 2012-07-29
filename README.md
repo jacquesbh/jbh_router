@@ -27,6 +27,7 @@
         </my_router>
     </jbh_router>
     ```
+
 ### Regex URL
 
 *   URL:
@@ -74,4 +75,52 @@ $router->isMatch(); // bool
 
 // assemble route
 $router->assemble($params);
+```
+
+## Need dynamism?
+
+Example with config:
+
+```xml
+<jbh_router>
+    <my_router>
+        <type>static</type>
+        <route config="my_module/my_router/route" /> <!-- here -->
+        <routers>
+            <foo>
+                <use>standard</use>
+                <args>
+                    <module>My_Module</module>
+                    <frontName>foo</frontName>
+                </args>
+            </foo>
+        </routers>
+        <module>foo</module>
+        <controller>index</controller>
+        <action>index</action>
+    </my_router>
+</jbh_router>
+```
+
+Example with helper:
+
+```xml
+<jbh_router>
+    <my_router>
+        <type>static</type>
+        <route helper="my_module/router::getRoute" /> <!-- here -->
+        <router>
+            <foo>
+                <use>standard</use>
+                <args>
+                    <module>My_Module</module>
+                    <frontName>foo</frontName>
+                </args>
+            </foo>
+        </routers>
+        <module>foo</module>
+        <controller>index</controller>
+        <action>index</action>
+    </my_router>
+</jbh_router>
 ```
