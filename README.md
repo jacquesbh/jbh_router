@@ -7,6 +7,7 @@
 *   URL: `http://example.org/foo.hmtl`
 *   Match: `http://example.org/foo/index/index`
 *   `config.xml`:
+
 ```xml
 <jbh_router>
     <my_router>
@@ -39,6 +40,7 @@
     *   `http://example.org/hello/index/index/key/bar`
     *   `http://example.org/hello/index/index/key/baz`
 *   `config.xml`:
+
 ```xml
 <jbh_router>
     <my_router>
