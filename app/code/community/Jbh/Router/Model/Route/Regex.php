@@ -27,7 +27,7 @@ class Jbh_Router_Model_Route_Regex extends Jbh_Router_Model_Route_Abstract
     public function configure()
     {
         if ($this->_routerObject === null) {
-            $this->_routerObject = new Zend_Controller_Router_Route_Regex($this->getRoute(), $this->getDefaults(), $this->getMap(), $this->getReverse());
+            $this->_routerObject = new Jbh_Router_Controller_Router_Route_Regex($this->getRoute(), $this->getDefaults(), $this->getMap(), $this->getReverse());
         }
         return $this;
     }
